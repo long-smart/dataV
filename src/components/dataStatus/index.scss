@@ -1,0 +1,56 @@
+.dataStatus {
+    margin: 0.1rem 0;
+    // padding 10px
+    padding: 0.1rem;
+    // flex 1
+    // height 60%
+    height: 59.6%;
+    // height 5.22rem
+    background: url(../../assets/images/dataStatus.png) no-repeat center center;
+    background-size: 100% 100%;
+    color: #fff;
+    .con {
+        height: calc(100% - 0.3rem);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+        
+    .top {
+        display: flex;
+        padding-top: 10px;
+        // height 120px
+        height: 1.1rem;
+        .leftImg {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            font-size: 0.14rem;
+            img {
+                // width 130px
+                width: 1.3rem;
+                // height 70px
+                height: 0.7rem;
+                margin-bottom: 5px;
+            }
+        }
+        
+        .rightDashboard {
+            width: 50%;
+            text-align: center;
+            font-size: 0.14rem;
+        }
+            
+    }
+    
+    .iops {
+        height: 1.6rem;
+    }
+    .bandWidth {
+        height: 1.6rem;
+    }
+        
+}
+    

@@ -1,0 +1,23 @@
+.clusterStatus {
+    height: 5.9rem;
+    overflow: hidden;
+    background: url(../../assets/images/cluster.png) no-repeat center center;
+    background-size: 100% 100%;
+    padding: 10px;
+    .con {
+        height: calc(100% - 0.3rem);
+        padding-top: 10px;
+        ul {
+            height: 100%;
+            overflow: hidden;
+        }
+        li {
+            width: 50%;
+            height: 50%;
+            text-align: center;
+            float: left;
+            color: #00b1ea;
+        }
+    }   
+}
+    

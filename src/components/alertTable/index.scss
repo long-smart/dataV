@@ -1,0 +1,77 @@
+.alertTable {
+    width: 100%;
+    height: 3.6rem;
+    background: url('../../assets/images/alertTable.png') no-repeat center center;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    padding: 0.1rem;
+    margin: 0.1rem 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    .table {
+        flex: 1;
+        color: #0096D0;
+        overflow: hidden;
+        .alertImg {
+            width: 0.2rem;
+        }
+    }
+    
+}
+    
+.detail {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.tootip {
+    position: absolute;
+    // width 400px
+    width: 4rem;
+    min-height: 0.4rem;
+    // min-height 40px
+    background: #0B277F;
+    color: #fff;
+    // padding 10px
+    padding: 0.1rem;
+    // line-height 22px
+    line-height: 0.22rem;
+    // border-radius 10px
+    border-radius: 0.1rem;
+    border: 1px solid #0D519D;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .8);
+    .pointer {
+        position: absolute;
+        top: 100%;
+        // left 200px
+        left: 2rem;
+        width:0;
+        height:0;
+        border-right: 8px solid transparent;
+        border-left: 8px solid transparent;
+        border-top: 8px solid #0B277F;
+    }
+}
+
+.even {
+    background: #0a276a url(../../assets/images/tableBG.png) no-repeat;
+    background-size: 100% 100%;
+}
+        
+.odd {
+    background: #021240;
+}
+
+.ant-table-tbody {
+    color: #0096D0;
+    .ant-table-cell {
+        border-bottom: none;
+    }
+}
+
+.ant-table-tbody > tr.ant-table-row:hover > td {
+    background: transparent;
+}
+

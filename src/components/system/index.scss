@@ -1,0 +1,102 @@
+$fontColor: #1df0da;
+.system {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    // height 436px
+    // height 4.36rem
+    height: 40.37%;
+    background: url(../../assets/images/system.png) no-repeat center center;
+    background-size: 100% 100%;
+    .con {
+        flex: 1;
+        margin-left: 0.3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        li {
+            padding-right: 0.1rem;
+            display: flex;
+            position: relative;
+            .left_label {
+                width: 0.8rem;
+                color: $fontColor;
+                line-height: 0.3rem;
+                font-size: 0.14rem;
+            }
+
+            .right_progress {
+                flex: 1;
+                display: flex;
+                justify-content: space-around;
+                position: relative;
+                height: 0.3rem;
+                .block {
+                    float: left;
+                    // width 8px
+                    width: 0.08rem;
+                    // height 24px
+                    height: 0.24rem;
+                    margin: 0 5px;
+                    border-radius: 3px;
+                }
+                .online {
+                    position: absolute;
+                    // left 20px
+                    left: 0.2rem;
+                    top: 50%;
+                    z-index: 2;
+                    transform: translateY(-50%);
+                    .val {
+                        position: absolute;
+                        // left -30px
+                        left: -0.3rem;
+                        color: #fdc207;
+                        // line-height 20px;
+                        line-height: 0.2rem;
+                        font-size: 0.14rem;
+                    }   
+                }
+                    
+                .offline {
+                    position: absolute;
+                    // right 20px
+                    right: 0.2rem;
+                    top: 50%;
+                    z-index: 2;
+                    transform: translateY(-50%);
+                    .val {
+                        position: absolute;
+                        // right -15px
+                        right: -0.15rem;
+                        color: #00ccff;
+                        // line-height 20px
+                        line-height: 0.2rem;
+                    }
+                }
+                   
+                .online p, .offline p {
+                    background: #222d5d;
+                }
+                    
+                .online p.active {
+                    background: #fdc207;
+                }
+                    
+                .offline p.active {
+                    background: #00ccff;
+                }
+                   
+                .xian {
+                    width: 100%;
+                    height: 2px;
+                    background: #0a1e52;
+                    position: absolute;
+                    top: 50%;
+                    margin-top: -1px;
+                    z-index: 1;
+                }
+            }
+        }
+    }
+}
